@@ -27,7 +27,18 @@ public class Main {
 
     }
 
-        public static int selectInput() throws InvalidAnswerException {
+    private static void handleDivision() {
+        System.out.println("You've opted for division");
+        System.out.println("Enter your numerator: ");
+        int numerator = scanner.nextInt();
+        System.out.println("Enter your denominator: ");
+        int denominator = scanner.nextInt();
+        double quotient = Operations.divide(numerator, denominator);
+        System.out.println("The result of " + numerator + " divided by " + denominator + " is " + quotient);
+    }
+
+
+    public static int selectInput() throws InvalidAnswerException {
             List<Integer> acceptableAnswers = List.of(1, 2, 4, 5, 6);
             System.out.println("Type the corresponding number to select your desired operation: ");
             System.out.println("1. Addition");
@@ -47,24 +58,17 @@ public class Main {
             } catch (InvalidAnswerException e){
             System.out.println(e.getMessage());
             {
-    }
-        else {
+            //  else {
             return choice;
         }
     }
 
-    public static void handleAddition(){
+  public static void handleAddition(){
 
-    }
+            }
 
     public static void handleDivision(){
-        System.out.println("You've opted for division");
-        System.out.println("Enter your numerator: ");
-        int numerator = scanner.nextInt();
-        System.out.println("Enter your denominator: ");
-        int denominator = scanner.nextInt();
-        double quotient = Operations.divide(numerator, denominator);
-        System.out.println("The result of " + numerator + " divided by " + denominator + " is " + quotient);
+
     }
 
 }

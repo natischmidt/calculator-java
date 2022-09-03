@@ -1,3 +1,4 @@
+import java.nio.channels.ScatteringByteChannel;
 import java.util.List;
 import java.util.Scanner;
 
@@ -26,20 +27,28 @@ public class Main {
 
     }
 
-        public static int selectInput() throws InvalidAnswerException  {
-        List<Integer> acceptableAnswers = List.of(1, 2, 4, 5, 6);
-        System.out.println("Type the corresponding number to select your desired operation: ");
-        System.out.println("1. Addition");
-        System.out.println("2. Subtraction");
-        System.out.println("3. Multiplication");
-        System.out.println("4. Division");
-        System.out.println("5. Square root");
-        System.out.println("6. Exit program");
-        System.out.println("Your choice: ");
-        int choice = scanner.nextInt();
-        if(!acceptableAnswers.contains(choice)) {
-            throw new InvalidAnswerException("Not a valid answer");
-        } else {
+        public static int selectInput() throws InvalidAnswerException {
+            List<Integer> acceptableAnswers = List.of(1, 2, 4, 5, 6);
+            System.out.println("Type the corresponding number to select your desired operation: ");
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+            System.out.println("5. Square root");
+            System.out.println("6. Exit program");
+            System.out.println("Your choice: ");
+            int choice = scanner.nextInt();
+
+            try {
+            if (!acceptableAnswers.contains(choice)) {
+                throw new InvalidAnswerException("Not a valid answer");
+            }
+
+            } catch (InvalidAnswerException e){
+            System.out.println(e.getMessage());
+            {
+    }
+        else {
             return choice;
         }
     }

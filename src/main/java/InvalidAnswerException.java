@@ -3,5 +3,7 @@ public class InvalidAnswerException extends Exception {
         super("Not a valid answer");
     }
 
-
+public InvalidAnswerException(String message){
+        super(message);
+}
 }

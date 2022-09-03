@@ -77,7 +77,7 @@ private static void Addition (){
         System.out.println("Enter the number: ");
         int int1 = scanner.nextInt();
         double square  = Operations.squareroot(int1);
-        System.out.println("The squareroot of" + int1 + " is " + square);
+        System.out.println("The squareroot of " + int1 + " is " + square);
 
     }
 
@@ -91,7 +91,7 @@ private static void Addition (){
         System.out.println("The product of" + multiplicand + " and " + multiplier + " is " + product);
 
     }
-
+// added a mehtod so the throw works
     public static int selectInput() throws InvalidAnswerException {
         List<Integer> acceptableAnswers = List.of(1, 2, 3,4, 5, 6);
         System.out.println("Type the corresponding number to select your desired operation: ");

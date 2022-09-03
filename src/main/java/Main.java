@@ -1,4 +1,5 @@
 
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -43,9 +44,15 @@ public class Main {
     //moved methods for the operators into  main
     //using float instead of int and double here to get exakt results of division
     private static void Division() {
+        float numerator = -1;
         System.out.println("You've chosen  division");
         System.out.println("Enter your numerator: ");
-        float numerator = scanner.nextInt();
+        try   {
+           numerator = scanner.nextInt();
+        }
+        catch (InputMismatchException a) {
+            System.out.println("Invalid input, write a number like 1,2,34");
+        }
         System.out.println("Enter your denominator: ");
         float denominator = scanner.nextInt();
         float quotient = numerator / denominator;

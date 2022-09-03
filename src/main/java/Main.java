@@ -20,7 +20,7 @@ public class Main {
                 case 2:
                 case 3:
                 case 4:
-                    handleDivision();
+                    Division();
                 case 5:
                 case 6:
                     inuse = false;
@@ -32,7 +32,7 @@ public class Main {
     }
 
     //moved methods for the operators into  main
-    private static void handleDivision() {
+    private static void Division() {
         System.out.println("You've opted for division");
         System.out.println("Enter your numerator: ");
         int numerator = scanner.nextInt();
@@ -42,6 +42,15 @@ public class Main {
         System.out.println("The result of " + numerator + " divided by " + denominator + " is " + quotient);
     }
 
+private static void Addition (){
+    System.out.println("You've chosen Addition");
+    System.out.println("Enter your first addend: ");
+    int addend1 = scanner.nextInt();
+    System.out.println("Enter the second addend: ");
+    int addend2 = scanner.nextInt();
+
+
+}
 
     public static int selectInput() throws InvalidAnswerException {
         List<Integer> acceptableAnswers = List.of(1, 2, 4, 5, 6);

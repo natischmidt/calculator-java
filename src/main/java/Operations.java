@@ -5,4 +5,9 @@ public class Operations {
         return result;
     };
 
+    public static double add (int addend1, int addend2 ){
+        double result = addend1 + addend2;
+        return result;
+    }
+
 }

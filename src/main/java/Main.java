@@ -72,7 +72,7 @@ private static void Addition (){
 
     }
 
-    public static void Multiplication(){
+    public static void Squareroot(){
         System.out.println("You've chosen Square root");
         System.out.println("Enter the number: ");
         int int1 = scanner.nextInt();
@@ -81,7 +81,7 @@ private static void Addition (){
 
     }
 
-    public static void Squareroot(){
+    public static void Multiplication(){
         System.out.println("You've chosen Multiplication");
         System.out.println("Enter the multiplicand: ");
         int multiplicand = scanner.nextInt();

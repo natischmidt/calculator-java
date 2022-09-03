@@ -30,6 +30,7 @@ public class Main {
                     break;
                 case 5:
                     Squareroot();
+                    break;
                 case 6:
                     inuse = false;
                     System.out.println("You've selected to quit the calculator. Goodbye!");

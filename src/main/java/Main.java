@@ -11,18 +11,23 @@ public class Main {
 
         System.out.println("Booting up Calculator 3000 ...");
         System.out.println("Finished booting up Calculator 3000");
-
+//break; was missing in this switch
         boolean inuse = true;
         while(inuse){
             int choice = selectInput();
             switch (choice){
                 case 1:
                     Addition();
+                    break;
                 case 2:
                     Subtraction();
+                    break;
                 case 3:
+                    Multiplication();
+                    break;
                 case 4:
                     Division();
+                    break;
                 case 5:
                 case 6:
                     inuse = false;

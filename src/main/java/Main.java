@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Main {
 
+
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -25,7 +26,7 @@ public class Main {
 
     }
 
-    public static int selectInput() throws InvalidAnswerException {
+        public static int selectInput() throws InvalidAnswerException  {
         List<Integer> acceptableAnswers = List.of(1, 2, 4, 5, 6);
         System.out.println("Type the corresponding number to select your desired operation: ");
         System.out.println("1. Addition");

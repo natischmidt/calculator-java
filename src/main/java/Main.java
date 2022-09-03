@@ -17,6 +17,7 @@ public class Main {
             int choice = selectInput();
             switch (choice){
                 case 1:
+                    Addition();
                 case 2:
                 case 3:
                 case 4:
@@ -48,6 +49,8 @@ private static void Addition (){
     int addend1 = scanner.nextInt();
     System.out.println("Enter the second addend: ");
     int addend2 = scanner.nextInt();
+    double sum = Operations.add(addend1,addend2);
+    System.out.println("The sum of" + addend1 + "and" + addend2 + " is " + sum);
 
 
 }

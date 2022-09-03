@@ -57,6 +57,11 @@ public class Main {
         catch (InputMismatchException a) {
             System.out.println("Invalid input, write a number like 1,2,34");
         }
+        switch ((int) numerator){
+            case -1:
+                //
+                break;
+        }
 
     }
 

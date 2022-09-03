@@ -3,7 +3,7 @@ public class Operations {
     public static double divide(int numerator, int denominator){
         float result = numerator / denominator;
         return result;
-    };
+    }
 
     public static double add (int addend1, int addend2 ){
         int result = addend1 + addend2 ;

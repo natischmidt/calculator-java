@@ -49,14 +49,15 @@ public class Main {
         System.out.println("Enter your numerator: ");
         try   {
            numerator = scanner.nextInt();
+            System.out.println("Enter your denominator: ");
+            float denominator = scanner.nextInt();
+            float quotient = numerator / denominator;
+            System.out.println(" The result of " + numerator + " divided by " + denominator + " is " + quotient);
         }
         catch (InputMismatchException a) {
             System.out.println("Invalid input, write a number like 1,2,34");
         }
-        System.out.println("Enter your denominator: ");
-        float denominator = scanner.nextInt();
-        float quotient = numerator / denominator;
-        System.out.println(" The result of " + numerator + " divided by " + denominator + " is " + quotient);
+
     }
 
 private static void Addition (){

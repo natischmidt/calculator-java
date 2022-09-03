@@ -19,6 +19,7 @@ public class Main {
                 case 1:
                     Addition();
                 case 2:
+                    Subtraction();
                 case 3:
                 case 4:
                     Division();
@@ -62,6 +63,17 @@ private static void Addition (){
         int subtrahend = scanner.nextInt();
         double difference = Operations.subtract(minuend,subtrahend);
         System.out.println("The difference of" + minuend + "and" + subtrahend + " is " + difference);
+
+    }
+
+    public static void Multiplication(){
+        System.out.println("You've chosen Multiplication");
+        System.out.println("Enter the multiplicand: ");
+        int multiplicand = scanner.nextInt();
+        System.out.println("Enter the multiplier: ");
+        int multiplier = scanner.nextInt();
+        double product  = Operations.multiply(multiplicand,multiplier);
+        System.out.println("The product of" + multiplicand + "and" + multiplier + " is " + product);
 
     }
 

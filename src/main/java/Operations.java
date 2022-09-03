@@ -14,4 +14,9 @@ public class Operations {
         int result = minuend - subtrahend ;
         return result;
     }
+
+    public static double multiply(int multiplicand, int multiplier){
+        int result = multiplicand * multiplier ;
+        return result;
+    }
 }

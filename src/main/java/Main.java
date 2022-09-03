@@ -7,7 +7,7 @@ public class Main {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidAnswerException {
 
         System.out.println("Booting up Calculator 3000 ...");
         System.out.println("Finished booting up Calculator 3000");
@@ -16,8 +16,12 @@ public class Main {
         while(inuse){
             int choice = selectInput();
             switch (choice){
+                case 1:
+                case 2:
+                case 3:
                 case 4:
                     handleDivision();
+                case 5:
                 case 6:
                     inuse = false;
                     System.out.println("You've selected to quit the calculator. Goodbye!");
@@ -27,6 +31,7 @@ public class Main {
 
     }
 
+    //moved methods for the operators into  main
     private static void handleDivision() {
         System.out.println("You've opted for division");
         System.out.println("Enter your numerator: ");
@@ -39,38 +44,28 @@ public class Main {
 
 
     public static int selectInput() throws InvalidAnswerException {
-            List<Integer> acceptableAnswers = List.of(1, 2, 4, 5, 6);
-            System.out.println("Type the corresponding number to select your desired operation: ");
-            System.out.println("1. Addition");
-            System.out.println("2. Subtraction");
-            System.out.println("3. Multiplication");
-            System.out.println("4. Division");
-            System.out.println("5. Square root");
-            System.out.println("6. Exit program");
-            System.out.println("Your choice: ");
-            int choice = scanner.nextInt();
+        List<Integer> acceptableAnswers = List.of(1, 2, 4, 5, 6);
+        System.out.println("Type the corresponding number to select your desired operation: ");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. Square root");
+        System.out.println("6. Exit program");
+        System.out.println("Your choice: ");
+        int choice = scanner.nextInt();
 
-            try {
+        try {
             if (!acceptableAnswers.contains(choice)) {
                 throw new InvalidAnswerException("Not a valid answer");
             }
 
-            } catch (InvalidAnswerException e){
+        } catch (InvalidAnswerException e) {
             System.out.println(e.getMessage());
-            {
-            //  else {
-            return choice;
+
         }
-    }
 
-  public static void handleAddition(){
-
-            }
-
-    public static void handleDivision(){
-
-    }
-
-}
+        return choice;
+    }}
 
 

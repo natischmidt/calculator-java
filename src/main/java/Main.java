@@ -46,7 +46,7 @@ public class Main {
         System.out.println("Enter your denominator: ");
         int denominator = scanner.nextInt();
         double quotient = Operations.divide(numerator, denominator);
-        System.out.println("The result of " + numerator + " divided by " + denominator + " is " + quotient);
+        System.out.println(" The result of " + numerator + " divided by " + denominator + " is " + quotient);
     }
 
 private static void Addition (){
@@ -56,7 +56,7 @@ private static void Addition (){
     System.out.println("Enter the second addend: ");
     int addend2 = scanner.nextInt();
     double sum = Operations.add(addend1,addend2);
-    System.out.println("The sum of" + addend1 + "and" + addend2 + " is " + sum);
+    System.out.println(" The sum of " + addend1 + " and " + addend2 + " is " + sum);
 
 }
 
@@ -67,7 +67,7 @@ private static void Addition (){
         System.out.println("Enter the subtrahend: ");
         int subtrahend = scanner.nextInt();
         double difference = Operations.subtract(minuend,subtrahend);
-        System.out.println("The difference of" + minuend + "and" + subtrahend + " is " + difference);
+        System.out.println(" The difference of " + minuend + " and " + subtrahend + " is " + difference);
 
     }
 
@@ -78,7 +78,7 @@ private static void Addition (){
         System.out.println("Enter the multiplier: ");
         int multiplier = scanner.nextInt();
         double product  = Operations.multiply(multiplicand,multiplier);
-        System.out.println("The product of" + multiplicand + "and" + multiplier + " is " + product);
+        System.out.println("The product of" + multiplicand + " and " + multiplier + " is " + product);
 
     }
 
@@ -91,12 +91,12 @@ private static void Addition (){
         System.out.println("4. Division");
         System.out.println("5. Square root");
         System.out.println("6. Exit program");
-        System.out.println("Your choice: ");
+        System.out.println(" Your choice: ");
         int choice = scanner.nextInt();
 
         try {
             if (!acceptableAnswers.contains(choice)) {
-                throw new InvalidAnswerException("Not a valid answer");
+                throw new InvalidAnswerException(" Not a valid answer ");
             }
 
         } catch (InvalidAnswerException e) {

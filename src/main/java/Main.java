@@ -1,4 +1,4 @@
-import java.nio.channels.ScatteringByteChannel;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -40,13 +40,14 @@ public class Main {
     }
 
     //moved methods for the operators into  main
+    //using float instead of int and double here to get exakt results of division
     private static void Division() {
         System.out.println("You've chosen  division");
         System.out.println("Enter your numerator: ");
-        int numerator = scanner.nextInt();
+        float numerator = scanner.nextInt();
         System.out.println("Enter your denominator: ");
-        int denominator = scanner.nextInt();
-        double quotient = Operations.divide(numerator, denominator);
+        float denominator = scanner.nextInt();
+        float quotient = numerator / denominator;
         System.out.println(" The result of " + numerator + " divided by " + denominator + " is " + quotient);
     }
 

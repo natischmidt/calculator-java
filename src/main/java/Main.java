@@ -29,6 +29,7 @@ public class Main {
                     Division();
                     break;
                 case 5:
+                    Squareroot();
                 case 6:
                     inuse = false;
                     System.out.println("You've selected to quit the calculator. Goodbye!");
@@ -72,6 +73,15 @@ private static void Addition (){
     }
 
     public static void Multiplication(){
+        System.out.println("You've chosen Square root");
+        System.out.println("Enter the number: ");
+        int int1 = scanner.nextInt();
+        double square  = Operations.squareroot(int1);
+        System.out.println("The squareroot of" + int1 + " is " + square);
+
+    }
+
+    public static void Squareroot(){
         System.out.println("You've chosen Multiplication");
         System.out.println("Enter the multiplicand: ");
         int multiplicand = scanner.nextInt();

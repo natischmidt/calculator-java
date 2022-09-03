@@ -19,4 +19,11 @@ public class Operations {
         int result = multiplicand * multiplier ;
         return result;
     }
+
+    public static double squareroot(int int1){
+        double result = Math.pow(int1,2);
+        return result;
+    }
+
+
 }

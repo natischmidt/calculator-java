@@ -6,8 +6,12 @@ public class Operations {
     };
 
     public static double add (int addend1, int addend2 ){
-        double result = addend1 + addend2;
+        int result = addend1 + addend2 ;
         return result;
     }
 
+    public static double subtract(int minuend, int subtrahend ){
+        int result = minuend - subtrahend ;
+        return result;
+    }
 }

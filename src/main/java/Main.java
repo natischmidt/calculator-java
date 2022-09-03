@@ -34,7 +34,7 @@ public class Main {
 
     //moved methods for the operators into  main
     private static void Division() {
-        System.out.println("You've opted for division");
+        System.out.println("You've chosen  division");
         System.out.println("Enter your numerator: ");
         int numerator = scanner.nextInt();
         System.out.println("Enter your denominator: ");
@@ -52,11 +52,21 @@ private static void Addition (){
     double sum = Operations.add(addend1,addend2);
     System.out.println("The sum of" + addend1 + "and" + addend2 + " is " + sum);
 
-
 }
 
+    private static void Subtraction (){
+        System.out.println("You've chosen Subtraction");
+        System.out.println("Enter the minuend: ");
+        int minuend = scanner.nextInt();
+        System.out.println("Enter the subtrahend: ");
+        int subtrahend = scanner.nextInt();
+        double difference = Operations.subtract(minuend,subtrahend);
+        System.out.println("The difference of" + minuend + "and" + subtrahend + " is " + difference);
+
+    }
+
     public static int selectInput() throws InvalidAnswerException {
-        List<Integer> acceptableAnswers = List.of(1, 2, 4, 5, 6);
+        List<Integer> acceptableAnswers = List.of(1, 2, 3,4, 5, 6);
         System.out.println("Type the corresponding number to select your desired operation: ");
         System.out.println("1. Addition");
         System.out.println("2. Subtraction");

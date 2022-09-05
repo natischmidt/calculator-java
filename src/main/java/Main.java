@@ -113,29 +113,23 @@ public class Main {
 
         if (userInput.hasNextInt()) {
             choice = userInput.nextInt();
-            return choice;
+            try  {
+                if (!acceptableAnswers.contains(choice)) {
+                    throw new InvalidAnswerException();
+                }
+
+            } catch (InvalidAnswerException e) {
+                System.out.println(e.getMessage());
+            }
+             return choice;
         }
             else if (!userInput.hasNextInt()){
 
                 System.out.println("Enter a number please.");
             }
 
-        else {
-                 try  {
-                        if (!acceptableAnswers.contains(choice)) {
-                            System.out.println("Enter a number between 1-6");
-                         throw new InvalidAnswerException("Not a valid answer");
-                        }
-
-                } catch (InvalidAnswerException e) {
-                System.out.println(e.getMessage());
-                 }
-
-        }
 
         return choice;
-
-
     }}
 
 

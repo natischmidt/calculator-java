@@ -10,19 +10,19 @@ public class OperationsTest {
     @Test
     @DisplayName("Add - should return the sum of the passed arguments")
     public void add(){
-        Assertions.assertEquals(5.0, Operations.add(2.0, 3.0));
+        Assertions.assertEquals(5.0, Operations.add((int) 2.0, (int) 3.0));
     }
 
     @Test
     @DisplayName("Subtract - should return the difference between the passed arguments")
     public void subtract(){
-        Assertions.assertEquals(4.0, Operations.subtract(9.0, 5.0));
+        Assertions.assertEquals(4.0, Operations.subtract((int) 9.0, (int) 5.0));
     }
 
     @Test
     @DisplayName("Multiply - should return the product of the the factors")
     public void multiply(){
-        Assertions.assertEquals(12.0, Operations.multiply(3.0, 4.0));
+        Assertions.assertEquals(12.0, Operations.multiply((int) 3.0, (int) 4.0));
     }
 
     @Test
@@ -38,10 +38,11 @@ public class OperationsTest {
         Assertions.assertEquals(2.5, Operations.divide(5, 2));
     }
 
+
     @Test
     @DisplayName("Sqrt - Should return the square root of the passed argument")
     public void sqrt(){
-        Assertions.assertEquals(3.0, Operations.sqrt(9.0));
+        Assertions.assertEquals(3.0, Operations.squareroot((int) 9.0));
     }
 
 

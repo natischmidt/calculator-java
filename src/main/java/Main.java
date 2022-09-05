@@ -42,14 +42,14 @@ public class Main {
     }
 
     //moved methods for the operators into  main
-    //using float instead of int and double here to get exakt results of division
+    //using float instead of int and double here to get precise results of division
     private static void Division() throws InvalidAnswerException {
 
         System.out.println("You've chosen  division");
         System.out.println("Enter your numerator: ");
-           float numerator = scanner.nextInt();
+           float numerator = scanner.nextFloat();
             System.out.println("Enter your denominator: ");
-            float denominator = scanner.nextInt();
+            float denominator = scanner.nextFloat();
             float quotient = numerator / denominator;
             System.out.println(" The result of " + numerator + " divided by " + denominator + " is " + quotient);
     }

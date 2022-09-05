@@ -98,6 +98,8 @@ public class Main {
 
     // added a mehtod so the throw works
     public static int selectInput() throws InvalidAnswerException {
+        Scanner scan = new Scanner(System.in);
+        int choice = 0;
         List<Integer> acceptableAnswers = List.of(1, 2, 3, 4, 5, 6);
         System.out.println("Type the corresponding number to select your desired operation: ");
         System.out.println("1. Addition");
@@ -108,7 +110,11 @@ public class Main {
         System.out.println("6. Exit program");
         System.out.println(" Your choice: ");
 
-        int choice = scanner.nextInt();
+        if (scan.hasNextInt()) {
+            choice = scanner.nextInt();
+        } else {
+            System.out.println("You need to enter a number!");
+        }
 
         try {
             if (!acceptableAnswers.contains(choice)) {
@@ -119,9 +125,7 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
-
             return choice;
-
         }
 
     }

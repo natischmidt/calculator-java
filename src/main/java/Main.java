@@ -98,38 +98,39 @@ public class Main {
 
     // added a mehtod so the throw works
 
-     //   Scanner scan = new Scanner(System.in);
+    public static int selectInput() throws InvalidAnswerException {
+        List<Integer> acceptableAnswers = List.of(1, 2, 3,4, 5, 6);
+        System.out.println("Type the corresponding number to select your desired operation: ");
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("5. Square root");
+        System.out.println("6. Exit program");
+        System.out.println(" Your choice: ");
+        int choice = 0;
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Your choice");
+        if (userInput.hasNextInt()) {
+            choice = userInput.nextInt();
+            return choice;
 
-
-        //if (scan.hasNextInt() ) {
-          //  choice = scanner.nextInt();
-        //} else {
-         //   System.out.println("You need to enter a number!");
-        //}
-        public static int selectInput() throws InvalidAnswerException {
-            List<Integer> acceptableAnswers = List.of(1, 2, 3,4, 5, 6);
-            System.out.println("Type the corresponding number to select your desired operation: ");
-            System.out.println("1. Addition");
-            System.out.println("2. Subtraction");
-            System.out.println("3. Multiplication");
-            System.out.println("4. Division");
-            System.out.println("5. Square root");
-            System.out.println("6. Exit program");
-            System.out.println(" Your choice: ");
-            int choice = scanner.nextInt();
-
+        } else {
             try {
                 if (!acceptableAnswers.contains(choice)) {
                     throw new InvalidAnswerException(" Not a valid answer ");
                 }
-
             } catch (InvalidAnswerException e) {
                 System.out.println(e.getMessage());
-
             }
 
-            return choice;
-        }}
+        }
+        return choice;
+
+
+    }}
+
+
 
 
     

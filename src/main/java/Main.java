@@ -107,10 +107,9 @@ public class Main {
         System.out.println("4. Division");
         System.out.println("5. Square root");
         System.out.println("6. Exit program");
-        System.out.println(" Your choice: ");
         int choice = 0;
         Scanner userInput = new Scanner(System.in);
-        System.out.println("Your choice");
+        System.out.println("Your choice:  ");
         if (userInput.hasNextInt()) {
             choice = userInput.nextInt();
             return choice;

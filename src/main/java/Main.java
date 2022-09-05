@@ -59,8 +59,10 @@ public class Main {
     private static void Addition() {
         System.out.println("You've chosen Addition");
         System.out.println("Enter your first addend: ");
+        while  (!scanner.hasNextInt()) scanner.next ();
         int addend1 = scanner.nextInt();
         System.out.println("Enter the second addend: ");
+        while  (!scanner.hasNextInt()) scanner.next ();
         int addend2 = scanner.nextInt();
         double sum = Operations.add(addend1, addend2);
         System.out.println(" The sum of " + addend1 + " and " + addend2 + " is " + sum);
@@ -70,8 +72,10 @@ public class Main {
     private static void Subtraction() {
         System.out.println("You've chosen Subtraction");
         System.out.println("Enter the minuend: ");
+        while  (!scanner.hasNextInt()) scanner.next ();
         int minuend = scanner.nextInt();
         System.out.println("Enter the subtrahend: ");
+        while  (!scanner.hasNextInt()) scanner.next ();
         int subtrahend = scanner.nextInt();
         double difference = Operations.subtract(minuend, subtrahend);
         System.out.println(" The difference of " + minuend + " and " + subtrahend + " is " + difference);

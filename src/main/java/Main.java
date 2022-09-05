@@ -1,5 +1,4 @@
 
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -122,7 +121,7 @@ public class Main {
 
         if (userInput.hasNextInt()) {
             choice = userInput.nextInt();
-            try  {
+            try {
                 if (!acceptableAnswers.contains(choice)) {
                     throw new InvalidAnswerException();
                 }

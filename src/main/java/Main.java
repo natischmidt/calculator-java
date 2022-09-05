@@ -43,12 +43,14 @@ public class Main {
 
     //moved methods for the operators into  main
     //using float instead of int and double here to get precise results of division
-    private static void Division() throws InvalidAnswerException {
+    private static void Division(){
 
         System.out.println("You've chosen  division");
         System.out.println("Enter your numerator: ");
+        while  (!scanner.hasNextFloat()) scanner.next ();
         float numerator = scanner.nextFloat();
         System.out.println("Enter your denominator: ");
+        while  (!scanner.hasNextFloat()) scanner.next ();
         float denominator = scanner.nextFloat();
         float quotient = numerator / denominator;
         System.out.println(" The result of " + numerator + " divided by " + denominator + " is " + quotient);

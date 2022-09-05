@@ -85,6 +85,7 @@ public class Main {
     public static void Squareroot() {
         System.out.println("You've chosen Square root");
         System.out.println("Enter the number: ");
+        while  (!scanner.hasNextInt()) scanner.next ();
         int int1 = scanner.nextInt();
         double square = Operations.sqrt(int1);
         System.out.println("The squareroot of " + int1 + " is " + square);
@@ -94,8 +95,10 @@ public class Main {
     public static void Multiplication() {
         System.out.println("You've chosen Multiplication");
         System.out.println("Enter the multiplicand: ");
+        while  (!scanner.hasNextInt()) scanner.next ();
         int multiplicand = scanner.nextInt();
         System.out.println("Enter the multiplier: ");
+        while  (!scanner.hasNextInt()) scanner.next ();
         int multiplier = scanner.nextInt();
         double product = Operations.multiply(multiplicand, multiplier);
         System.out.println("The product of" + multiplicand + " and " + multiplier + " is " + product);

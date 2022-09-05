@@ -115,13 +115,14 @@ public class Main {
             return choice;
 
         } else {
-            try {
-                if (!acceptableAnswers.contains(choice)) {
-                    throw new InvalidAnswerException(" Not a valid answer ");
-                }
-            } catch (InvalidAnswerException e) {
+                 try  {
+                        if (!acceptableAnswers.contains(choice)) {
+                       throw new InvalidAnswerException(" Not a valid answer ");
+                       }
+
+                } catch (InvalidAnswerException e) {
                 System.out.println(e.getMessage());
-            }
+                 }
 
         }
         return choice;

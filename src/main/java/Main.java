@@ -96,35 +96,33 @@ private static void Addition (){
 
     }
 // added a mehtod so the throw works
-    public static int selectInput() throws InvalidAnswerException {
-        List<Integer> acceptableAnswers = List.of(1, 2, 3, 4, 5, 6);
-        System.out.println("Type the corresponding number to select your desired operation: ");
-        System.out.println("1. Addition");
-        System.out.println("2. Subtraction");
-        System.out.println("3. Multiplication");
-        System.out.println("4. Division");
-        System.out.println("5. Square root");
-        System.out.println("6. Exit program");
-        System.out.println(" Your choice: ");
+public static int selectInput() throws InvalidAnswerException {
+    List<Integer> acceptableAnswers = List.of(1, 2, 3,4, 5, 6);
+    System.out.println("Type the corresponding number to select your desired operation: ");
+    System.out.println("1. Addition");
+    System.out.println("2. Subtraction");
+    System.out.println("3. Multiplication");
+    System.out.println("4. Division");
+    System.out.println("5. Square root");
+    System.out.println("6. Exit program");
+    System.out.println(" Your choice: ");
+    int choice = scanner.nextInt();
 
-        try {
-            int choice = scanner.nextInt();
-            if (choice < 1 || choice > 6) {
-                throw new InvalidAnswerException(" Not a valid answer ");
-            }
-        } catch (InvalidAnswerException e) {
-            System.out.println(e.getMessage());
+    try {
+        if (!acceptableAnswers.contains(choice)) {
+            throw new InvalidAnswerException(" Not a valid answer ");
         }
 
-        // if (!acceptableAnswers.contains(choice)) {
-        //    throw new InvalidAnswerException(" Not a valid answer ");
-        //   }
-
-
-
-        //}
-        //return choice;
+    } catch (InvalidAnswerException e) {
+        System.out.println(e.getMessage());
 
     }
 
+    return choice;
 
+        }
+        
+    }
+
+
+    

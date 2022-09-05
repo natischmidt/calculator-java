@@ -110,21 +110,28 @@ public class Main {
         int choice = 0;
         Scanner userInput = new Scanner(System.in);
         System.out.println("Your choice:  ");
+
         if (userInput.hasNextInt()) {
             choice = userInput.nextInt();
             return choice;
+        }
+            else if (!userInput.hasNextInt()){
 
-        } else {
+                System.out.println("Enter a number please.");
+            }
+
+        else {
                  try  {
                         if (!acceptableAnswers.contains(choice)) {
-                       throw new InvalidAnswerException(" Not a valid answer ");
-                       }
+                         throw new InvalidAnswerException("Not a valid answer");
+                        }
 
                 } catch (InvalidAnswerException e) {
                 System.out.println(e.getMessage());
                  }
 
         }
+
         return choice;
 
 

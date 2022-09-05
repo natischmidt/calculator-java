@@ -123,6 +123,7 @@ public class Main {
         else {
                  try  {
                         if (!acceptableAnswers.contains(choice)) {
+                            System.out.println("Enter a number between 1-6");
                          throw new InvalidAnswerException("Not a valid answer");
                         }
 

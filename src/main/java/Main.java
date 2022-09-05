@@ -110,11 +110,11 @@ public class Main {
         System.out.println("6. Exit program");
         System.out.println(" Your choice: ");
 
-        if (scan.hasNextInt()) {
-            choice = scanner.nextInt();
-        } else {
-            System.out.println("You need to enter a number!");
-        }
+        //if (scan.hasNextInt() ) {
+          //  choice = scanner.nextInt();
+        //} else {
+         //   System.out.println("You need to enter a number!");
+        //}
 
         try {
             if (!acceptableAnswers.contains(choice)) {

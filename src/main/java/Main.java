@@ -80,7 +80,7 @@ private static void Addition (){
         System.out.println("You've chosen Square root");
         System.out.println("Enter the number: ");
         int int1 = scanner.nextInt();
-        double square  = Operations.squareroot(int1);
+        double square  = Operations.sqrt(int1);
         System.out.println("The squareroot of " + int1 + " is " + square);
 
     }

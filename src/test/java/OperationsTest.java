@@ -42,7 +42,7 @@ public class OperationsTest {
     @Test
     @DisplayName("Sqrt - Should return the square root of the passed argument")
     public void sqrt(){
-        Assertions.assertEquals(3.0, Operations.squareroot((int) 9.0));
+        Assertions.assertEquals(3.0, Operations.sqrt((int) 9.0));
     }
 
 

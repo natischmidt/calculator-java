@@ -20,8 +20,8 @@ public class Operations {
         return result;
     }
 
-    public static double squareroot(int int1){
-        double result = Math.pow(int1,2);
+    public static double sqrt(int int1){
+        double result = Math.pow(int1,0.5);
         return result;
     }
 

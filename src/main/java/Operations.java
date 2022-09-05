@@ -1,6 +1,6 @@
 public class Operations {
 
-    public static double divide(int numerator, int denominator){
+    public static double divide(float numerator, float denominator){
         float result = numerator / denominator;
         return result;
     }

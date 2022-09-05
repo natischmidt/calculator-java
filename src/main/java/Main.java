@@ -97,38 +97,39 @@ public class Main {
     }
 
     // added a mehtod so the throw works
-    public static int selectInput() throws InvalidAnswerException {
-        Scanner scan = new Scanner(System.in);
-        int choice = 0;
-        List<Integer> acceptableAnswers = List.of(1, 2, 3, 4, 5, 6);
-        System.out.println("Type the corresponding number to select your desired operation: ");
-        System.out.println("1. Addition");
-        System.out.println("2. Subtraction");
-        System.out.println("3. Multiplication");
-        System.out.println("4. Division");
-        System.out.println("5. Square root");
-        System.out.println("6. Exit program");
-        System.out.println(" Your choice: ");
+
+     //   Scanner scan = new Scanner(System.in);
+
 
         //if (scan.hasNextInt() ) {
           //  choice = scanner.nextInt();
         //} else {
          //   System.out.println("You need to enter a number!");
         //}
+        public static int selectInput() throws InvalidAnswerException {
+            List<Integer> acceptableAnswers = List.of(1, 2, 3,4, 5, 6);
+            System.out.println("Type the corresponding number to select your desired operation: ");
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+            System.out.println("5. Square root");
+            System.out.println("6. Exit program");
+            System.out.println(" Your choice: ");
+            int choice = scanner.nextInt();
 
-        try {
-            if (!acceptableAnswers.contains(choice)) {
-                throw new InvalidAnswerException(" Not a valid answer ");
+            try {
+                if (!acceptableAnswers.contains(choice)) {
+                    throw new InvalidAnswerException(" Not a valid answer ");
+                }
+
+            } catch (InvalidAnswerException e) {
+                System.out.println(e.getMessage());
+
             }
 
-        } catch (InvalidAnswerException e) {
-            System.out.println(e.getMessage());
-        }
-
             return choice;
-        }
-
-    }
+        }}
 
 
     

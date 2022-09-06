@@ -46,10 +46,10 @@ public class Main {
 
         System.out.println("You've chosen  division");
         System.out.println("Enter your numerator: ");
-        while  (!scanner.hasNextFloat()) scanner.next ();
+        while  (!scanner.hasNextFloat()) {scanner.next (); System.out.println("Input must be numbers");}
         float numerator = scanner.nextFloat();
         System.out.println("Enter your denominator: ");
-        while  (!scanner.hasNextFloat()) scanner.next ();
+        while  (!scanner.hasNextFloat()) {scanner.next (); System.out.println("Input must be numbers");}
         float denominator = scanner.nextFloat();
         float quotient = numerator / denominator;
         System.out.println(" The result of " + numerator + " divided by " + denominator + " is " + quotient);
@@ -58,10 +58,10 @@ public class Main {
     private static void Addition() {
         System.out.println("You've chosen Addition");
         System.out.println("Enter your first addend: ");
-        while  (!scanner.hasNextInt()) scanner.next ();
+        while  (!scanner.hasNextInt()) {scanner.next (); System.out.println("Input must be numbers");}
         int addend1 = scanner.nextInt();
         System.out.println("Enter the second addend: ");
-        while  (!scanner.hasNextInt()) scanner.next ();
+        while  (!scanner.hasNextInt()) {scanner.next (); System.out.println("Input must be numbers");}
         int addend2 = scanner.nextInt();
         double sum = Operations.add(addend1, addend2);
         System.out.println(" The sum of " + addend1 + " and " + addend2 + " is " + sum);
@@ -71,10 +71,10 @@ public class Main {
     private static void Subtraction() {
         System.out.println("You've chosen Subtraction");
         System.out.println("Enter the minuend: ");
-        while  (!scanner.hasNextInt()) scanner.next ();
+        while  (!scanner.hasNextInt()) {scanner.next (); System.out.println("Input must be numbers");}
         int minuend = scanner.nextInt();
         System.out.println("Enter the subtrahend: ");
-        while  (!scanner.hasNextInt()) scanner.next ();
+        while  (!scanner.hasNextInt()) {scanner.next (); System.out.println("Input must be numbers");}
         int subtrahend = scanner.nextInt();
         double difference = Operations.subtract(minuend, subtrahend);
         System.out.println(" The difference of " + minuend + " and " + subtrahend + " is " + difference);
@@ -84,7 +84,7 @@ public class Main {
     public static void Squareroot() {
         System.out.println("You've chosen Square root");
         System.out.println("Enter the number: ");
-        while  (!scanner.hasNextInt()) scanner.next ();
+        while  (!scanner.hasNextInt()) {scanner.next (); System.out.println("Input must be numbers");}
         int int1 = scanner.nextInt();
         double square = Operations.sqrt(int1);
         System.out.println("The squareroot of " + int1 + " is " + square);
@@ -94,10 +94,10 @@ public class Main {
     public static void Multiplication() {
         System.out.println("You've chosen Multiplication");
         System.out.println("Enter the multiplicand: ");
-        while  (!scanner.hasNextInt()) scanner.next ();
+        while  (!scanner.hasNextInt()) {scanner.next (); System.out.println("Input must be numbers");}
         int multiplicand = scanner.nextInt();
         System.out.println("Enter the multiplier: ");
-        while  (!scanner.hasNextInt()) scanner.next ();
+        while  (!scanner.hasNextInt()) {scanner.next (); System.out.println("Input must be numbers");}
         int multiplier = scanner.nextInt();
         double product = Operations.multiply(multiplicand, multiplier);
         System.out.println("The product of" + multiplicand + " and " + multiplier + " is " + product);

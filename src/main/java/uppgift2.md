@@ -1,12 +1,12 @@
 1.Identifiera och ge exempel på förekomsten i den egna koden av följande: En klass, en metod, en primitiv datatyp samt ett objekt.
 
-_En klass: En klass i Java är en användardefinierad datatyp, en "blueprint", en klassificering, som beskriver beteendet som objektet av dess typ stödjer.
- exempel ur denna program är InvalidAnswerException.java vilket är en class jag la till. Beeteendet på denna class är att returnera "Enter a number between 1-6".
+_En klass: en klass i Java är en användardefinierad datatyp, en "blueprint", en klassificering, som beskriver beteendet som objektet av dess typ stödjer.
+ exempel ur denna program är InvalidAnswerException.java vilket är en class jag la till. beeteendet på denna class är att returnera "Enter a number between 1-6".
 _en metod: En metod är ett kodblock som bara körs när det anropas.
-Man kan skicka data  till en metod. Metoder används för att utföra viss kod, och  kallas även funktioner. Fördelen med Metoder är att kunna lägga sin kod och på ett smidigt sätt kunna använda den igen och inte behöva skriva samma kod flera gånger.
+man kan skicka data  till en metod. metoder används för att utföra viss kod, och  kallas även funktioner. Fördelen med Metoder är att kunna lägga sin kod och på ett smidigt sätt kunna använda den igen och inte behöva skriva samma kod flera gånger.
 Till exempel har jag Addition(); som en method, vilket mitt programm anropa varje gång någon vill addera med hjälp av kalkulatorn. 
 Om jag däremot inte hade gjort det till en method skulle jag behöva skriva samma kod om och om nu behöver jag bara anropa metoden. 
-_en primitiv datatyp: Dessa är byte,int,short,long,float,double,bollean och char. Det som utgör de är att alla dessa har ett "defaultvärde" till exempel är boolean false. Double och float har 0.0 som default. Boolean finns i programmet som boolean insuse = false; Jag har även använt float i Division();. 
+_en primitiv datatyp: Dessa är byte,int,short,long,float,double,bollean och char. Det som utgör de är att alla dessa har ett "defaultvärde" till exempel är boolean false innan värdet byts. Double och float har 0.0 som default. Boolean finns i programmet som boolean insuse = false; Jag har även använt float i Division();. 
 _ett objekt: Ett objekt är en specifik sak, en klass är en typ av sak. Klassen definierar vilken information det behövs. Objektet är själva "saken".Klassen är en typ av sak. Objektet är en specifik sak.
 I detta programm finns det ett objekt scanner som deklarares: private static final Scanner scanner = new Scanner(System.in);
 

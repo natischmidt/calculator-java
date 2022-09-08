@@ -45,7 +45,7 @@ public class Main {
     private static void Division(){
         System.out.println("You've chosen  division");
         System.out.println("Enter your numerator: ");
-        while  (!scanner.hasNextFloat()); scanner.next ();
+        while (!scanner.hasNextFloat()) {scanner.next (); System.out.println("Input must be numbers");}
         float numerator = scanner.nextFloat();
         System.out.println("Enter your denominator: ");
         while  (!scanner.hasNextFloat()) {scanner.next (); System.out.println("Input must be numbers");}
@@ -127,6 +127,7 @@ public class Main {
 
             } catch (InvalidAnswerException e) {
                 System.out.println(e.getMessage());
+                throw e;
             }
              return choice;
         }
